@@ -71,13 +71,6 @@ module
   wire sync_mem_cs_n;
   wire sync_mem_we_n, sync_mem_we_n_rise, sync_mem_we_n_fall;
   
-  sync 
-    ( 
-            .async_sig(), 
-            .sync_out(), 
-            .clk(wb_clk_i) 
-          );
-
   sync_edge_detect
     i_sync_mem_oe_n(
                     .async_sig(mem_oe_n),

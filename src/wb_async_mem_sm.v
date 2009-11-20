@@ -13,9 +13,7 @@ module
   ) 
   (
     input   [(DW-1):0]  wb_data_i,
-    output  [(DW-1):0]  wb_data_o,
     input   [(AW-1):0]  wb_addr_i,
-    output  [3:0]       wb_sel_o,
     output              wb_we_o,
     output              wb_cyc_o,
     output              wb_stb_o,
